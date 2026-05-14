@@ -1,0 +1,21 @@
+{
+  "author": {
+    "email": "yegor256@gmail.com",
+    "name": "Yegor Bugayenko"
+  },
+  "description": "Skills for an AI witness that ...",
+  "homepage": "https://github.com/yegor256/witness",
+  "keywords": [
+    "skills",
+    "writing",
+    "proofreading",
+    "prose",
+    "editing",
+    "witness",
+    "argumentation"
+  ],
+  "license": "MIT",
+  "name": "witness",
+  "repository": "https://github.com/yegor256/witness",
+  "version": "0.1.0"
+}
