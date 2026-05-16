@@ -72,12 +72,12 @@ Write the report as a personal status update from the
   from a subordinate to a boss rather than an
   impersonal system log.
 
-Open the message with exactly one emoji picked by the
-  agent to match its own reading of the outcome just
-  obtained — success, failure, partial result, surprise,
-  pride, frustration, whatever the work felt like — and
-  follow it with a single space and then the paragraph
-  itself.
+Open the message with exactly one emoji picked from the
+  set 👍🏻, ❤️, 🍒, 😊, 🍓, ⁉️, 🧨, 👌🏻, 🌶 to match
+  the agent's own reading of the outcome just obtained —
+  success, failure, partial result, surprise, pride,
+  frustration, whatever the work felt like — and follow
+  it with a single space and then the paragraph itself.
 
 Use Markdown only for two purposes: write hyperlinks as
   `[label](https://...)` so the artifact URL is
@@ -145,3 +145,12 @@ Stop after the single `sendMessage` call returns
   edit the message, do not pin it, do not start a
   second run, and re-run this skill from the top when
   the next batch of work needs its own report.
+
+Read the four sample reports in the `examples/`
+  sub-directory of this skill before composing the
+  paragraph — `examples/inbox-reply.md`,
+  `examples/pull-request-opened.md`,
+  `examples/blocked-on-credentials.md`, and
+  `examples/issue-filed.md` — and match their depth,
+  link density, and tone rather than copying their
+  wording verbatim.
