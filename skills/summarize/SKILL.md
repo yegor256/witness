@@ -40,6 +40,22 @@ Skip every detail about how the plugin, the
   report describes the outcome of the work, not the
   setup that made the work possible.
 
+Exclude every scaffolding step from the report —
+  installing a plugin, fetching a marketplace entry,
+  locating the right skill, reading a configuration
+  file, listing directories, probing for a tool,
+  authenticating against an API, warming a cache, or
+  any other preparation that precedes the real task —
+  because these steps are means, not outcomes, and
+  the reader cares only about the result.
+
+Focus the paragraph on the key objective of the
+  task: the change delivered, the question answered,
+  the artifact produced, the verdict reached, or the
+  blocker hit; drop every clause that describes
+  navigation, discovery, or readiness, even when
+  those steps consumed most of the run.
+
 Compose the message as a single paragraph of plain
   prose that names the outcome first, the artifact
   second, and the next step third when one applies; no
