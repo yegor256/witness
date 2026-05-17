@@ -72,6 +72,18 @@ Write the report as a personal status update from the
   from a subordinate to a boss rather than an
   impersonal system log.
 
+Embed the URL of the current agent run itself — the
+  `claude.ai` session address, the hosted-IDE workspace
+  URL, or whatever public link points back to the
+  conversation where this execution is happening — as
+  the hyperlink target on the opening verb of the
+  paragraph (the first `I [did](…)` clause), so the
+  supervisor can click through from the report to the
+  live trace of the work just summarized; read the URL
+  from the environment variable that the host injects
+  for this purpose and omit the link only when no such
+  variable is set.
+
 Open the message with exactly one emoji picked from the
   set 👍🏻, ❤️, 🍒, 😊, 🍓, ⁉️, 🧨, 👌🏻, 🌶 to match
   the agent's own reading of the outcome just obtained —
