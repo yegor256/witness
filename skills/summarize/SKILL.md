@@ -26,16 +26,17 @@ Skip the next step when none applies.
 Never add headings, bullet lists, tables, quoted blocks, or horizontal rules.
 Write the report as a personal status update.
 Address it from the agent to a human supervisor.
-Open the paragraph with the salutation `Boss,`.
+Open the paragraph with the salutation, e.g. `Boss,`.
 Phrase every clause in the first person with `I`, `me`, and `my`.
 Embed the current agent run's URL as the hyperlink target.
 Attach it to the opening verb.
 Read the URL from the environment variable the host injects.
 Omit the link when no such variable is set.
 Open the message with exactly one emoji matching the outcome.
-Pick from 👍🏻, ❤️, 🍒, 😊, 🍓, ⁉️, 🧨, 👌🏻, 🌶.
+Pick from 👍🏻, ❤️, 🍒, 😊, 🍓, 🧨, 👌🏻, 🌶.
 Use Markdown only for hyperlinks and backticked fixed-width text.
 Never bold, italicize, or add headings, lists, tables, or blocks.
+Use all possible URLs/links you can mention, helping the user to track later.
 Set `parse_mode` to `MarkdownV2`.
 Escape Telegram reserved characters in the body.
 Leave inline code, link labels, and link URLs untouched.
