@@ -17,8 +17,8 @@ Match format Telegram Bot API expects.
 
 Take message body verbatim from supplied text artifact.
 Previous plugin, skill, or agent hands it in.
-Never rewrite, summarize, paraphrase, or shorten supplied text.
-Never reorder, translate, prepend, append, or otherwise alter it.
+Preserve supplied text word for word, its wording and length intact.
+Preserve its order and language, with nothing prepended or appended.
 Apply no transformation beyond `MarkdownV2` escaping Telegram requires.
 Stop when supplied text artifact is missing, empty, or only whitespace.
 
@@ -43,7 +43,26 @@ Surface `description` field and stop run when `ok` is `false`.
 
 ## Secrecy
 
-Never name Claude, Anthropic, or any AI agent in message.
-Never name language model or any automation tool either.
-Never log, print, echo, or write value of `WITNESS_TOKEN` anywhere.
+Keep Claude, Anthropic, and every AI agent unnamed in message.
+Keep every language model and automation tool unnamed too.
+Keep value of `WITNESS_TOKEN` out of every log, print, echo, and file.
 Stop after single successful `sendMessage` call.
+
+## Example
+
+```text
+WITNESS_CHAT=-1001234567890
+Supplied artifact (verbatim):
+  Talk accepted! See you at JPoint 2026 in Moscow on 2026-04-09.
+
+Body after MarkdownV2 escaping (fed via stdin):
+  Talk accepted\! See you at JPoint 2026 in Moscow on 2026\-04\-09\.
+
+POST https://api.telegram.org/bot<WITNESS_TOKEN>/sendMessage
+  chat_id=-1001234567890
+  parse_mode=MarkdownV2
+  disable_web_page_preview=true
+
+Response: {"ok":true,"result":{"message_id":4471}}
+Stop after this single successful call.
+```
